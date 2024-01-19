@@ -36,3 +36,26 @@ console.log(typeof myFunction) // function (object)
 // typeof undefined => undefined
 // typeof function => object function
 // typeof symbol => symbol
+
+// ********************** STACK & HEAP **********************
+
+// Stack (Primitive) : Copy
+// Heap (Non-Primitive) : Reference of original value
+
+let myYoutubeName = "tomYT"
+let anotherName = myYoutubeName // Value of myYoutubeName will be copied to anotherName
+anotherName = "thomasYT"
+
+// console.log(anotherName)
+// console.log(myYoutubeName)
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne // Reference of userOne will be given (no copy)
+userTwo.email = "tom@gmail.com" // User one will also change
+
+console.log(userOne.email) // o/p -> tom@gmail.com
+console.log(userTwo.email) // o/p -> tom@gmail.com
