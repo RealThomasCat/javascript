@@ -68,3 +68,27 @@ console.log(Object.values(tinderUser)); // Returns array of values => [ '123abc'
 console.log(Object.entries(tinderUser)); // Returns array of arrays => [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 // hasOwnProperty (check if object contains a key)
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // o/p => true
+
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// DESTRUCTURING
+const {courseInstructor} = course
+// destructuring with different name
+const {courseName: cName} = course
+
+console.log(courseInstructor)
+console.log(cName)
+
+// destructuring in props in react
+// const navbar = ({company}) => {}
+
+// JSON
+// {
+//     "name": "yashveer",
+//     "college": "iiitm",
+//     "age": "21"
+// }
