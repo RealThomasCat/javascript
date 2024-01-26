@@ -47,3 +47,42 @@ function loginUserMessage(username = "sam") {
 loginUserMessage("Yashveer"); // no output
 // console.log(loginUserMessage("Yashveer")) // o/p => Yashveer just logged in!
 console.log(loginUserMessage()); // o/p -> undefined just logged in!
+
+// REST OPERATOR
+function calculateCartPrice(...num1) {
+    return num1
+}
+function calculateCartPrice2(val1, val2, ...num1) {
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 300, 400)) // o/p => [ 200, 300, 400 ]
+// console.log(calculateCartPrice2(200, 300, 400, 500)) // o/p => [ 400, 500 ]
+
+const user = {
+    username: "yashveer",
+    price: 199
+}
+
+// FUNCTIONS WITH OBJECTS
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+// handleObject(user) // o/p => Username is yashveer and price is 199
+
+// handleObject({
+//     username: "tom",
+//     price: 99999
+// }) // o/p =>Username is tom and price is 99999
+
+const myNewArray = [200, 400, 100, 500]
+
+// FUNCTIONS WITH ARRAYS
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray)) // o/p => 400
+console.log(returnSecondValue([100, 200, 300, 400])) // o/p => 200
+
